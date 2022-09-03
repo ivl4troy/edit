@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>editor</title>
+        <link rel="stylesheet" href="edit.css">
+        <body>
+            <div class="container">
+                <div class="img">
+                    <div class="img-box">
+                        <img id="img">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                    <div class="upload">
+                        <label for="upload">upload</label>
+                        <input type="file" id="upload">
+                    </div>
+                </div>
+                <div class="filters">
+                    <ul>
+                        <li>
+                            <label for="saturate">saturate</label>
+                            <input id="saturate" type="range" max="200" min="0" value="100">
+                        </li> 
+                        <li>
+                            <label for="contrast">contrast</label>
+                            <input id="contrast" type="range" max="200" min="0" value="100">
+                        </li>
+                        <li>
+                            <label for="brightness">brightness</label>
+                            <input id="brightness" type="range" max="200" min="0" value="100">
+                        </li>
+                        <li>
+                            <label for="sepia">sepia</label>
+                            <input id="sepia" type="range" max="200" min="0" value="100">
+                        </li>
+                        <li>
+                            <label for="grayscale">grayscale</label>
+                            <input id="grayscale" type="range" step="0.1" max="1" min="0" value="0">
+                        </li>
+                        <li>
+                            <label for="blur">blur</label>
+                            <input id="blur" type="range" step="0.1" max="10" min="0" value="0">
+                        </li>
+                        <li>
+                            <label for="hue-rotate">hue-rotate</label>
+                            <input id="hue-rotate" type="range"  max="350" min="0" value="0">
+                        </li>
+                        <li>
+                            <a download="image" id="download">download</a>
+                            <span onclick="resetValue()">reset</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <script src="edit.js"></script>
+
+        </body>
+    </head>
+</html>
